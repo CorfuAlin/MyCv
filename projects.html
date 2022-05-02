@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Projects</title>
+</head>
+
+<body style="background-color:#EAF6F6">
+
+  <h1>Projects</h1>
+  <hr>
+  <p>
+  <ol>
+    <li><strong>WebService_Basic_ToProduction</strong></li>
+    <br>
+    <ol type="I">
+      <li> What I wanted to learn and achieve with this project</li>
+
+      I wanted to create a Basic Server with 4 methods (GET, PUT, POST, DELETE)
+      focusing on the Post Method that has behind a (Request and Response Model) that will provide
+      the user to input a firstName, a lastName, an email and a password getting as a response a
+      UserId, his firstName, lastName and email.
+      As a consequence of the user’s input on the first hand I wanted to store his password
+      in the database (for this I used the path from UserRequest to UserResponse throw the DTO,
+      UserEntity, UserServiceImpl, UserService interface and UserRepository making use of the
+      Crud Repository). On the second hand I wanted the email to be unique for every new user that
+      was provided from the Post method so I created a costume 500 error message to handle the
+      duplicate entry’s using a method in the Service Repository that the Service Implementation
+      Class used codding an if statement that will throw a new RuntimeException.
+      <br>
+      <br>
+      <li>Dependencies</li>
+      <ol>
+        <li>Spring Web</li>
+        <li>Spring Data JPA</li>
+        <li>PostgreSQL Driver</li>
+      </ol>
+      <br>
+
+      <li>Future development</li>
+
+      <ol>
+        <li>creating a generated User Public Id (the field in this application remained testUserId)</li>
+        <li>creating the other 3 methods</li>
+        <li>implementing security using SpringSecurity</li>
+        <li>adding XML and Json Support</li>
+        <br>
+      </ol>
+    </ol>
+    <br>
+
+    <li><strong>FastFood_App</strong></li>
+    <br>
+    <ol>
+      <li>What I wanted to learn and achieve with this project</li>
+    </ol>
+    <p>As a result of an Udemy course that offered as challenge to create an application in
+      order to manager the process of selling hamburgers I wanted to create a program that would
+      combine and use all the Java-OOP pillars (Inheritance, Encapsulation, Abstraction and
+      Polymorphism) that I got familiar with.This application is able to select types of burgers and some of the additional items that
+      are added to the burgers and pricing. I created a base Hamburger (Class), with two other types
+      of hamburgers.
+      The Hamburger (Class) has the following items.
+    <ul>
+      <li>Bread roll type, meat and up to 4 additional additions (things like lettuce, tomato, carrot,
+        etc.) that the customer can select to be added to the burger. Each one of these items gets charged
+        an additional price in order to calculate the final price. (base burger with all the additions)</li>
+    </ul>
+    <br>
+    Two extra varieties of Hamburgers (subclasses):
+    <ol type="a">
+      <li> HealthyBurger (Class) plus two addition items that can be added.
+        <ul>
+          <li>The Healthy Burger has 6 items (Additions) in total.</li>
+        </ul>
+      </li>
+      <br>
+      <li>DeluxeBurger (Class) comes with chips and drinks as additions.
+        <ul>
+          <li>No extra additions are allowed.</li>
+        </ul>
+      </li>
+    </ol>
+    <br>
+    All 3 classes have a method that can be called anytime to show the base price of the
+    hamburger plus all the additions, each showing the addition name, and addition price, and a
+    grand/final total for the burger (base price + all additions).
+
+    </p>
+
+
+    <br>
+    <li><strong>Upcomming Projects</strong></li>
+    <br>
+    <ol>
+      <li>Testing Service Layer Code with JUnit 5 & Mockito</li>
+      <ul>
+        <li>This section is destined for future development and it will contain the projects upmentioned (WebService_Basic_ToProduction && FastFood_App) with a testing
+          possibility making use of JUnit5 and Mockito.</li>
+      </ul>
+    </ol>
+  </ol>
+
+</body>
+
+</html>
